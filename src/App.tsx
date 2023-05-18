@@ -76,16 +76,6 @@ async function fetchRandomUser(setUser: React.Dispatch<React.SetStateAction<rand
   setUsername(userJson.results[0].name.first + " " + userJson.results[0].name.last);
 }
 
-function handleSubmit(e: React.SyntheticEvent<HTMLFormElement>) {
-  e.preventDefault();
-
-  const form = e.currentTarget;
-  const formElements = form.elements as typeof form.elements & {
-    usernameInput: HTMLInputElement
-  }
- 
-}
-
 function App() {
 
   function handleSubmit(e: React.SyntheticEvent<HTMLFormElement>) {
